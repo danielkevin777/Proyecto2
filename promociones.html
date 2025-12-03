@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promociones</title>
+    <link rel="stylesheet" href="promociones.css">
+    <link href="stilo.css" rel="stylesheet" type="text/css"/>  <!-- Enlace a stilo.css -->
+</head>
+<body>
+
+    <!-- MENÚ SUPERIOR -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="imagenes/Logo9.png" alt="Logo de Elite Events" style="height: 40px; margin-right: 10px;">
+            Elite <span>Events</span>
+        </div>
+
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li class="submenu">
+                <a href="organizacion.html">Organización de Eventos ▼</a>
+                <div class="mega-menu">
+                    <div class="column">
+                        <h3>Eventos Sociales</h3>
+                        <a href="tipo_evento/evento_social/boda.html">Bodas</a>
+                        <a href="tipo_evento/evento_social/quinciañero.html">Quinceaños</a>
+                        <a href="tipo_evento/evento_social/aniversario.html">Aniversarios</a>
+                        <a href="tipo_evento/evento_social/cumpleaños.html">Cumpleaños</a>
+                    </div>
+                    <div class="column">
+                        <h3>Eventos Corporativos</h3>
+                        <a href="tipo_evento/evento_corporativo/conferencia.html">Conferencias</a>
+                        <a href="tipo_evento/evento_corporativo/congreso.html">Congresos</a>
+                        <a href="tipo_evento/evento_corporativo/lanzamiento.html">Lanzamientos</a>
+                        <a href="tipo_evento/evento_corporativo/feria.html">Ferias</a>
+                    </div>
+                    <div class="column">
+                        <h3>Artistas & Shows</h3>
+                        <a href="tipo_evento/artista/comicos.html">Cómicos</a>
+                        <a href="tipo_evento/artista/musicos.html">Músicos</a>
+                        <a href="tipo_evento/artista/presentador.html">Presentadores</a>
+                    </div>
+                    <div class="column">
+                        <h3>Servicios</h3>
+                        <a href="tipo_evento/servicio/catering.html">Catering</a>
+                        <a href="tipo_evento/servicio/decoracion.html">Decoración</a>
+                        <a href="tipo_evento/servicio/iluminacion.html">Iluminación</a>
+                        <a href="tipo_evento/servicio/espacios.html">Espacios para eventos</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="portafolio.html">Portafolio</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="cotizacion.html">Cotización</a></li>
+            <li><a href="promociones.html">Promociones</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </header>
+
+    <!-- Contenedor principal de promociones -->
+    <h1 class="titulo">Gestión de Promociones</h1>
+
+    <section class="formulario-container">
+        <h2>Seleccionar Promoción</h2>
+
+        <form id="formPromo">
+            <label for="tipoPromo">Tipo de Promoción:</label>
+            <select id="tipoPromo" required>
+                <option value="">Selecciona un tipo de promoción</option>
+                <option value="1">Tipo A</option>
+                <option value="2">Tipo B</option>
+                <option value="3">Tipo C</option>
+            </select>
+
+            <label for="descuento">Descuento (%):</label>
+            <select id="descuento" required>
+                <option value="">Selecciona un descuento</option>
+                <option value="10">10%</option>
+                <option value="20">20%</option>
+                <option value="30">30%</option>
+                <option value="40">40%</option>
+                <option value="50">50%</option>
+            </select>
+
+            <p id="descripcionPromo" style="margin-top: 10px;"></p> <!-- Aquí se mostrará el mensaje de descripción de la promoción -->
+
+            <button type="submit" class="btn">Aplicar Promoción</button>
+        </form>
+    </section>
+
+    <!-- Mensaje de confirmación -->
+    <div id="mensajeConfirmacion" style="text-align: center; margin-top: 20px; color: green;"></div>
+
+    <section class="acciones">
+        <h2 class="subtitulo">Promociones Registradas</h2>
+        <div id="contenedorPromos" class="tarjetas"></div> <!-- Sección para mostrar las promociones registradas -->
+    </section>
+
+    <script src="promociones.js"></script>
+</body>
+</html>
+

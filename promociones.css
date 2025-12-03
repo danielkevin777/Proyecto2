@@ -1,0 +1,193 @@
+/* Tarjeta principal */
+.promo-card, .historial-card {
+    background: white;
+    border: 2px solid #D4AF37; /* Dorado elegante */
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* Títulos */
+.promo-card h3, .historial-card h3 {
+    color: #b30000; /* rojo oscuro elegante */
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Submenú */
+.submenu:hover .mega-menu {
+    display: block;
+}
+
+.mega-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    top: 40px;
+    padding: 15px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.mega-menu .column {
+    width: 25%;
+    display: inline-block;
+    padding: 10px;
+}
+
+.mega-menu .column h3 {
+    color: gold;
+}
+
+.mega-menu .column a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+.mega-menu .column a:hover {
+    color: gold;
+}
+
+/* Títulos */
+.titulo, .subtitulo {
+    text-align: center;
+    color: #800000;
+    margin-top: 30px;
+}
+
+/* Formulario de selección de promociones */
+.formulario-container {
+    width: 40%;
+    margin: auto;
+    background: #fff;
+    padding: 25px;
+    border: 2px solid gold;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0 15px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Estilo de los botones */
+.btn {
+    background: #800000;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.btn:hover {
+    background: gold;
+    color: black;
+}
+
+/* Tarjetas de promociones */
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px auto;
+    width: 85%;
+}
+
+.card {
+    width: 250px;
+    background: #fff;
+    border: 2px solid gold;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.card h3 {
+    color: #800000;
+}
+
+.card p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* Mensaje de confirmación */
+#mensajeConfirmacion {
+    font-size: 16px;
+    font-weight: bold;
+    color: green;
+}
+
+/* Tarjeta principal */
+.promo-card, .historial-card {
+    background: white;
+    border: 2px solid #D4AF37; /* Dorado elegante */
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* Títulos dentro de las tarjetas */
+.promo-card h3, .historial-card h3 {
+    color: #b30000; /* rojo oscuro elegante */
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Texto de promoción */
+#promoGenerada {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111;
+    text-align: center;
+    margin: 15px 0;
+}
+
+/* Botones para generar y limpiar promociones */
+.btn-generar, .btn-limpiar {
+    display: block;
+    width: 60%;
+    margin: 15px auto;
+    padding: 10px;
+    border: none;
+    color: white;
+    background: #111;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    border: 2px solid #D4AF37;
+}
+
+.btn-generar:hover, .btn-limpiar:hover {
+    background: #b30000;
+}
+
+/* Historial de promociones */
+#historialPromos {
+    list-style: none;
+    padding: 0;
+}
+
+#historialPromos li {
+    background: #f5f5f5;
+    border-left: 4px solid #D4AF37;
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 5px;
+}
+

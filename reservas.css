@@ -1,0 +1,184 @@
+/* ESTILOS GENERALES */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+.menu {
+    background: var(--negro);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 26px;
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+.logo span {
+    color: var(--dorado);
+}
+
+.menu-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-links a:hover {
+    color: var(--dorado);
+}
+
+/* BANNER */
+.banner-reservas {
+    background: url('imagenes/fondof3.jpg') center/cover no-repeat;
+    padding: 100px 20px;
+    text-align: center;
+    color: #C9A84D;
+    border-bottom: 4px solid red;
+}
+
+.banner-reservas h1 {
+    font-size: 42px;
+    color: #C9A84D;
+}
+
+/* CONTENEDOR GENERAL */
+.contenedor {
+    width: 60%;
+    margin: 60px auto;
+    background: white;
+    padding: 40px;
+    border: 3px solid gold;
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+}
+
+/* TÍTULOS */
+h1, h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #b30000;  /* rojo elegante */
+    margin-bottom: 25px;
+}
+
+/* FORMULARIO CENTRADO */
+.formulario {
+    width: 80%;
+    margin: 0 auto;
+    background: #fffaf0;
+    padding: 25px 35px;
+    border-radius: 15px;
+    border: 2px solid gold;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* LABELS */
+.formulario label {
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+}
+
+/* INPUTS */
+input, select, textarea {
+    padding: 12px;
+    font-size: 15px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background: white;
+    transition: 0.3s;
+}
+
+/* EFECTO AL ESCRIBIR */
+input:focus, select:focus, textarea:focus {
+    border-color: red;
+    box-shadow: 0 0 8px rgba(255,0,0,0.4);
+    outline: none;
+}
+
+/* BOTÓN */
+.btn-reservar {
+    background: #b30000;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-reservar:hover {
+    background: gold;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* LISTA DE RESERVAS */
+.lista {
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 3px solid red;
+}
+
+/* TARJETAS DE RESERVAS */
+.reserva-card {
+    background: #fff;
+    border-left: 5px solid gold;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.btn-limpiar {
+    background: black;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-limpiar:hover {
+    background: #b30000;
+    transform: scale(1.04);
+}
+
+/* Estilo del botón para ordenar */
+#ordenar-reservas button {
+    background: #b30000; /* Mismo color que el botón de reservar */
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 20px; /* Ajuste del margen superior */
+}
+
+/* Efecto hover para el botón */
+#ordenar-reservas button:hover {
+    background: gold;
+    color: black;
+    transform: scale(1.05);
+}

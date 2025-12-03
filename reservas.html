@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - EventLux</title>
+    <link rel="stylesheet" href="reservas.css">
+    <link rel="stylesheet" href="stilo.css">
+</head>
+<body>
+
+    <!-- MENÚ SUPERIOR -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="imagenes/Logo9.png" alt="Logo de Elite Events" style="height: 40px; margin-right: 10px;">
+            Elite <span>Events</span>
+        </div>
+
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+
+            <!-- SUBMENÚ PRINCIPAL -->
+            <li class="submenu">
+                <a href="organizacion.html">Organización de Eventos ▼</a>
+
+                <div class="mega-menu">
+                    <div class="column">
+                        <h3>Eventos Sociales</h3>
+                        <a href="tipo_evento/evento_social/boda.html">Bodas</a>
+                        <a href="tipo_evento/evento_social/quinciañero.html">Quinceaños</a>
+                        <a href="tipo_evento/evento_social/aniversario.html">Aniversarios</a>
+                        <a href="tipo_evento/evento_social/cumpleaños.html">Cumpleaños</a>
+                    </div>
+                    <div class="column">
+                        <h3>Eventos Corporativos</h3>
+                        <a href="tipo_evento/evento_corporativo/conferencia.html">Conferencias</a>
+                        <a href="tipo_evento/evento_corporativo/congreso.html">Congresos</a>
+                        <a href="tipo_evento/evento_corporativo/lanzamiento.html">Lanzamientos</a>
+                        <a href="tipo_evento/evento_corporativo/feria.html">Ferias</a>
+                    </div>
+                    <div class="column">
+                        <h3>Artistas & Shows</h3>
+                        <a href="tipo_evento/artista/comicos.html">Cómicos</a>
+                        <a href="tipo_evento/artista/musicos.html">Músicos</a>
+                        <a href="tipo_evento/artista/presentador.html">Presentadores</a>
+                    </div>
+                    <div class="column">
+                        <h3>Servicios</h3>
+                        <a href="tipo_evento/servicio/catering.html">Catering</a>
+                        <a href="tipo_evento/servicio/decoracion.html">Decoración</a>
+                        <a href="tipo_evento/servicio/iluminacion.html">Iluminación</a>
+                        <a href="tipo_evento/servicio/espacios.html">Espacios para eventos</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="portafolio.html">Portafolio</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="cotizacion.html">Cotizacion</a></li>
+            <li><a href="promociones.html">Promociones</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </header>
+
+    <!-- BANNER SUPERIOR -->
+    <section class="banner-reservas">
+        <h1>Realiza tu Reserva</h1>
+        <p>Completa los detalles de tu evento y confirma tu fecha con nosotros.</p>
+    </section>
+
+    <!-- FORMULARIO DE RESERVA -->
+    <div class="contenedor">
+        <h1>Realizar Reserva</h1>
+
+        <form id="formReserva" class="formulario">
+            <label>Nombre completo:</label>
+            <input type="text" id="nombre" required>
+
+            <label>Correo electrónico:</label>
+            <input type="email" id="correo" required>
+
+            <label>Teléfono:</label>
+            <input type="text" id="telefono" required>
+
+            <label>Tipo de evento:</label>
+            <select id="evento" required>
+                <option value="Boda">Boda</option>
+                <option value="Cumpleaños">Cumpleaños</option>
+                <option value="Aniversario">Aniversario</option>
+                <option value="Quinceañero">Quinceañero</option>
+            </select>
+
+            <label>Fecha del evento:</label>
+            <input type="date" id="fecha" required>
+
+            <label>Descripción adicional:</label>
+            <textarea id="descripcion"></textarea>
+
+            <button type="submit" class="btn-reservar">Reservar</button>
+        </form>
+
+        <h2>Buscar Reserva</h2>
+        <div class="formulario buscador">
+            <label>Nombre registrado:</label>
+            <input type="text" id="buscarNombre" placeholder="Ingresa tu nombre">
+
+            <button onclick="buscarReserva()" class="btn-reservar">Buscar</button>
+        </div>
+
+        
+        <!-- Botón para ordenar reservas por nombre -->
+        <section id="ordenar-reservas">
+            <button onclick="ordenarReservas()">Ordenar por Nombre</button>
+        </section>
+        
+        <h2>Resultado de búsqueda</h2>
+        <div id="resultadoBusqueda" class="lista"></div>
+
+    </div>
+
+    <script src="reservas.js"></script>
+</body>
+</html>

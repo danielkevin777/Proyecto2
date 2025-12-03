@@ -1,0 +1,290 @@
+/* PALETA DE COLORES ELEGANTES */
+:root {
+    --negro: #0d0d0d;
+    --gris-oscuro: #1a1a1a;
+    --gris-medio: #3a3a3a;
+    --blanco: #ffffff;
+    --dorado: #d4af37;
+    --rojo: #e50914;
+}
+
+/* =========================================================
+   MENÚ SUPERIOR PREMIUM
+========================================================= */
+
+.header {
+    width: 100%;
+    background: linear-gradient(to bottom, #0d0d0d, #181818);
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.4);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--blanco);
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: var(--dorado);
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav ul li a {
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 8px 10px;
+    font-size: 17px;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+
+.nav ul li a:hover,
+.nav ul li a.active {
+    color: var(--dorado);
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+/* SUBMENÚ */
+.submenu {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background: #111;
+    border: 1px solid rgba(212,175,55,0.3);
+    min-width: 200px;
+    top: 45px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+    overflow: hidden;
+}
+
+.submenu:hover .dropdown {
+    display: block;
+}
+
+.dropdown li a {
+    padding: 12px 15px;
+    display: block;
+    color: var(--blanco);
+    transition: 0.3s;
+}
+
+.dropdown li a:hover {
+    background: var(--dorado);
+    color: var(--negro);
+}
+
+/* =========================================================
+   SECCIÓN SUPERIOR DEL BLOG
+========================================================= */
+
+.blog-header {
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+    background: url("https://images.unsplash.com/photo-1527525443983-6e60c75fff46")
+                center/cover no-repeat;
+    border-bottom: 2px solid rgba(212,175,55,0.4);
+}
+
+.contact-form-mini {
+    width: 35%;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(6px);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(212,175,55,0.4);
+}
+
+.contact-form-mini h2 {
+    color: var(--dorado);
+    margin-bottom: 15px;
+}
+
+.contact-form-mini input,
+.contact-form-mini textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    background: #111;
+    color: var(--blanco);
+    border: 1px solid var(--gris-medio);
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.contact-form-mini button {
+    width: 100%;
+    background: var(--dorado);
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form-mini button:hover {
+    background: #c49b2e;
+}
+
+/* =========================================================
+   TARJETAS CENTRALES (GALERÍA)
+========================================================= */
+
+.blog-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 60px;
+    background: var(--blanco);   /* FONDO BLANCO */
+    border-top: 2px solid var(--rojo);  /* SEPARACIÓN ROJA SUPERIOR */
+    border-bottom: 2px solid var(--rojo); /* SEPARACIÓN ROJA INFERIOR */
+}
+
+.blog-card {
+    background: var(--negro);
+    border-radius: 12px;
+    overflow: hidden;
+
+    /* BORDE DORADO PREMIUM */
+    border: 2px solid var(--dorado);
+
+    transition: 0.3s;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.blog-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid var(--dorado);
+}
+
+.blog-card h3 {
+    margin: 12px;
+    color: var(--negro);
+    font-weight: bold;
+}
+
+.blog-card p {
+    margin: 0 12px 12px;
+    color: #444;
+}
+
+.blog-card a {
+    display: inline-block;
+    margin: 10px 12px 15px;
+    color: var(--rojo);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* =========================================================
+   FORMULARIO INFERIOR PREMIUM 
+========================================================= */
+.formulario-guardar {
+    width: 90%;
+    margin: 40px auto;
+    padding: 30px;
+    background: #0d0d0d;
+    border: 2px solid #d4af37;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+.formulario-guardar h2 {
+    text-align: center;
+    color: #d4af37;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.formulario-guardar input,
+.formulario-guardar textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background: #1a1a1a;
+    border: 2px solid #3a3a3a;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.formulario-guardar input:focus,
+.formulario-guardar textarea:focus {
+    border-color: #d4af37;
+    background: #222;
+}
+
+.formulario-guardar button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background: linear-gradient(to right, #d4af37, #b5942e);
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.formulario-guardar button:hover {
+    transform: translateY(-3px);
+    background: #f5d66d;
+}
+
+/* HISTORIAL */
+#historial-mensajes {
+    width: 90%;
+    margin: 40px auto;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid #d4af37;
+}
+
+#contenedorHistorial .mensaje-card {
+    background: black;
+    color: #d4af37;
+    padding: 15px;
+    border-radius: 12px;
+    border: 2px solid #d4af37;
+    margin-bottom: 15px;
+}
+
+#btnLimpiar {
+    width: 100%;
+    padding: 10px;
+    background: #e50914;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#btnLimpiar:hover {
+    background: #b40610;
+}

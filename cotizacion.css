@@ -1,0 +1,181 @@
+:root {
+    --rojo: #D00000;
+    --negro: #000;
+    --blanco: #fff;
+    --dorado: #D4AF37;
+}
+
+/* MENU SUPERIOR – mismo estilo */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+.menu {
+    background: var(--negro);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 26px;
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+.logo span {
+    color: var(--dorado);
+}
+
+.menu-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-links a:hover {
+    color: var(--dorado);
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu-items {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: var(--negro);
+    list-style: none;
+    display: none;
+    padding: 10px 0;
+}
+
+.submenu:hover .submenu-items {
+    display: block;
+}
+
+.submenu-items li {
+    padding: 8px 20px;
+}
+
+.submenu-items li a:hover {
+    color: var(--rojo);
+}
+
+/* ===================== */
+/* BANNER SUPERIOR       */
+/* ===================== */
+.banner-cot {
+    background: url('imagenes/fondof3.jpg') center/cover no-repeat;
+    padding: 130px 20px;
+    text-align: center;
+    color: white;
+}
+
+.banner-cot h1 {
+    font-size: 48px;
+    text-shadow: 3px 3px 8px black;
+}
+
+.banner-cot p {
+    font-size: 18px;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* ===================== */
+/* TARJETAS DE COTIZACIÓN */
+/* ===================== */
+.cotizacion-container {
+    background: white;
+    padding: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    border-top: 4px solid var(--rojo);
+}
+
+.cot-card {
+    background: var(--blanco);
+    border: 2px solid var(--dorado);
+    border-radius: 12px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.cot-card:hover {
+    transform: translateY(-8px);
+}
+
+.cot-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid var(--dorado);
+}
+
+.cot-card h3 {
+    margin-top: 15px;
+}
+
+.cot-card p {
+    padding: 0 15px 20px;
+}
+
+.btn-cot {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--rojo);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 2px solid var(--dorado);
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.btn-cot:hover {
+    background: #a80000;
+}
+
+/* ===================== */
+/* SECCIÓN INFERIOR NEGRA */
+/* ===================== */
+.seccion-inferior {
+    background: var(--negro);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-top: 4px solid var(--rojo);
+}
+
+.seccion-inferior h2 {
+    color: var(--dorado);
+}
+
+.btn-blog {
+    background: var(--rojo);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 6px;
+    border: 2px solid var(--dorado);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-blog:hover {
+    background: #a80000;
+}

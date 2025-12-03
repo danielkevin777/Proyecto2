@@ -1,0 +1,250 @@
+/* ===========================
+    PALETA Y BASE
+   =========================== */
+
+:root {
+    --rojo: #E60000;
+    --negro: #111111;
+    --blanco: #ffffff;
+    --dorado: #D4AF37;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #f3f3f3;
+    color: var(--negro);
+}
+
+/* ===========================
+    NAVBAR PROFESIONAL
+   =========================== */
+
+/* BARRA DE NAVEGACIÓN MEJORADA Y CENTRADA */
+.navbar {
+    display: flex;
+    justify-content: flex-start; /* Asegura que el contenido se alinee a la izquierda */
+    align-items: center;
+    gap: 180px;                /* Distancia equilibrada */
+    padding: 18px 0;
+    background: var(--negro);
+    border-bottom: 2px solid var(--dorado);
+}
+
+/* Logo centrado verticalmente */
+.logo {
+    font-size: 30px;
+    color: var(--blanco);
+    font-weight: bold;
+    margin-left: 30px;
+    margin-right: 20px;       /* separa un poco del menú */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* No hay restricciones de tamaño aquí */
+    width: auto; /* Deja que el contenedor crezca según el tamaño de la imagen */
+    height: auto; /* Ajusta el contenedor automáticamente al tamaño de la imagen */
+}
+
+.logo img {
+    height: 100px; /* Cambia el tamaño del logo aquí */
+    width: auto;   /* Mantén la proporción */
+}
+
+
+/* Menú centrado y más elegante */
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu li a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.3s;
+    padding: 6px 4px;
+}
+
+.menu li a:hover {
+    color: var(--dorado);
+    transform: translateY(-2px);
+}
+
+.logo span {
+    color: var(--dorado);
+}
+
+.menu li a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    color: var(--dorado);
+}
+
+/* ===========================
+    MEGA MENU
+   =========================== */
+
+.submenu {
+    position: relative;
+}
+
+.mega-menu {
+    position: absolute;
+    top: 100%;
+    left: -20%;
+    display: none;
+    width: 900px;
+    padding: 35px;
+    background: var(--negro);
+    border-radius: 10px;
+    border: 1px solid var(--dorado);
+    box-shadow: 0 6px 30px rgba(0,0,0,0.5);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.submenu:hover .mega-menu {
+    display: grid;
+}
+
+.mega-menu h3 {
+    color: var(--dorado);
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.mega-menu a {
+    display: block;
+    color: var(--blanco);
+    text-decoration: none;
+    margin-bottom: 8px;
+    padding-left: 5px;
+    border-left: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.mega-menu a:hover {
+    color: var(--rojo);
+    border-left: 2px solid var(--rojo);
+    transform: translateX(4px);
+}
+
+/* ===========================
+    HERO SECTION
+   =========================== */
+
+.hero {
+    height: 420px;
+    background: linear-gradient(
+        rgba(0,0,0,0.6), 
+        rgba(0,0,0,0.6) /* esta es la imagen de fondo del inicio */
+    ), url('imagenes/fondof3.jpg'); /* la ruta correcta */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: var(--blanco);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: var(--rojo);
+    color: var(--blanco);
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: var(--dorado);
+    color: var(--negro);
+}
+
+/* ===========================
+    CARDS
+   =========================== */
+
+.cards {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    background: var(--blanco);
+    width: 280px;
+    padding: 30px;
+    border-radius: 10px;
+    border-top: 4px solid var(--dorado);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+/* ===========================
+    FOOTER
+   =========================== */
+
+.footer {
+    background: var(--negro);
+    padding: 15px;
+    text-align: center;
+    color: var(--blanco);
+    border-top: 2px solid var(--dorado);
+}
+
+/* ===========================
+    MARQUEE EFFECT
+   =========================== */
+
+/* Marquee Styles */
+.marquee {
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
+}
+
+marquee {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
