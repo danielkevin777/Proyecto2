@@ -1,0 +1,135 @@
+/* ----- Estilo general ----- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    color: #333;
+}
+
+.header {
+    background: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.intro-section {
+    padding: 40px;
+    text-align: center;
+    background: url('../../imagenes/FondoZ1.jpg') center/cover no-repeat;
+    border-bottom: 3px solid red;
+    color: white;
+    text-align: center;
+}
+
+.intro-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 600; /* Añadido para mayor énfasis */
+}
+
+/* ----- Galería ----- */
+.gallery {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.gallery h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #000;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.gallery-item {
+    width: 300px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform .2s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gallery-item h3 {
+    padding: 15px;
+    font-size: 20px;
+    color: #333;
+}
+
+.gallery-item p {
+    padding: 0 15px 20px;
+    font-size: 15px;
+    color: #555;
+}
+
+/* ----- Info sección ----- */
+.info-section {
+    padding: 40px 20px;
+    background: #fff;
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
+}
+
+.info-section h2 {
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.info-section ul {
+    max-width: 750px;
+    margin: auto;
+    font-size: 17px;
+    line-height: 28px;
+}
+
+/* ----- Botones ----- */
+.button-section {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.main-button {
+    display: inline-block;
+    padding: 14px 35px;
+    margin: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    background: linear-gradient(45deg, #333, #666);
+    color: white;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.main-button:hover {
+    background: linear-gradient(45deg, #666, #333);
+    transform: scale(1.05);
+}
+
+/* ----- Footer ----- */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}

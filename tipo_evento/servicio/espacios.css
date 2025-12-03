@@ -1,0 +1,131 @@
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #ffffff;
+    color: #222;
+}
+
+/* MENÚ SUPERIOR */
+.menu-superior {
+    background: #000;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-superior .logo {
+    color: #FFD700;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.menu-superior nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.menu-superior nav a:hover {
+    color: #FFD700;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.espacios-contenedor {
+    padding: 60px;
+    text-align: center;
+    background: #fff;
+    border-top: 4px solid #B30000; /* línea roja arriba */
+}
+
+.espacios-contenedor h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.espacios-contenedor p {
+    color: #444;
+    margin-bottom: 40px;
+}
+
+/* GRID */
+.espacios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+/* TARJETAS DE ESPACIOS */
+.espacio-card {
+    background: #fff;
+    border: 3px solid #FFD700;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    transition: 0.3s ease;
+}
+
+.espacio-card:hover {
+    transform: translateY(-6px);
+}
+
+.espacio-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.espacio-card h3 {
+    font-size: 22px;
+    margin: 18px 0 5px;
+    color: #B30000;
+}
+
+.espacio-card p {
+    padding: 0 15px 20px;
+}
+
+/* BOTONES */
+.btn-principal {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background: #B30000;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn-principal:hover {
+    background: #8A0000;
+}
+
+/* FOOTER */
+.footer {
+    background: #000;
+    padding: 25px;
+    text-align: center;
+    color: #fff;
+    margin-top: 60px;
+}
+
+.btn-blog {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 25px;
+    background: #FFD700;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.btn-blog:hover {
+    background: #e6c200;
+}

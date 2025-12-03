@@ -1,0 +1,131 @@
+/* ======== GENERAL ======== */
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #fff;
+    color: #222;
+}
+
+/* ======== HEADER ======== */
+
+.header {
+    background: #000;
+    color: #C9A84D;
+    text-align: center;
+    padding: 35px 10px;
+    border-bottom: 4px solid red;
+}
+
+/* ======== INTRO ======== */
+
+.intro-section {
+    padding: 40px 20px;
+    text-align: center;
+    background: url('../../imagenes/FondoZ1.jpg') center/cover no-repeat;
+    border-bottom: 3px solid red;
+    color: #ffffff
+}
+
+.intro-section p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* ======== GALERÍA ======== */
+
+.gallery {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    margin-bottom: 30px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.gallery-item {
+    background: #fff;
+    border: 2px solid #C9A84D; /* borde dorado */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gallery-item h3 {
+    margin-top: 15px;
+}
+
+.gallery-item p {
+    padding: 0 15px 15px;
+    font-size: 15px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+    border-color: red;
+}
+
+/* ======== INFO ======== */
+
+.info-section {
+    padding: 40px 20px;
+    background: #fff;
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
+}
+
+.info-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info-section ul {
+    max-width: 750px;
+    margin: auto;
+    font-size: 17px;
+    line-height: 28px;
+}
+
+/* ======== BOTONES ======== */
+
+.main-button {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #000;
+    color: #C9A84D;
+    border: 2px solid #C9A84D;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px;
+    transition: 0.3s ease;
+}
+
+.main-button:hover {
+    background: red;
+    border-color: red;
+    color: #fff;
+}
+
+/* ======== FOOTER ======== */
+
+.footer {
+    background: #000;
+    color: #C9A84D;
+    text-align: center;
+    padding: 20px 10px;
+    border-top: 3px solid red;
+}

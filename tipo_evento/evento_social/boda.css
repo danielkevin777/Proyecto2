@@ -1,0 +1,237 @@
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+/* MENÚ */
+.header {
+    width: 100%;
+    background: linear-gradient(to bottom, #0d0d0d, #181818);
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.4);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #C9A84D;
+}
+
+/* MENÚ DESPLEGABLE */
+.submenu { 
+    position: relative; 
+}
+
+.submenu-items {
+    position: absolute;
+    top: 30px;
+    background: black;
+    border: 1px solid #C9A84D;
+    list-style: none;
+    padding: 10px;
+    display: none;
+}
+
+.submenu:hover .submenu-items {
+    display: block;
+}
+
+/* BANNER BODA */
+.banner-boda {
+    background: url('../../imagenes/FondoZ1.jpg') center/cover no-repeat;
+    padding: 140px 20px;
+    text-align: center;
+    color: #C9A84D;
+    border-bottom: 4px solid red;
+}
+
+.banner-boda h1 {
+    color: #C9A84D;
+    font-size: 46px;
+}
+
+/* INFORMACIÓN PRINCIPAL */
+.titulo-seccion {
+    text-align: center;
+    color: #C9A84D;
+    margin-top: 40px;
+    font-size: 32px;
+}
+
+.descripcion {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #444;
+    font-size: 18px;
+}
+
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 0 40px;
+    margin-bottom: 50px;
+}
+
+.beneficio-card {
+    background: white;
+    border: 2px solid #C9A84D;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.beneficio-card h3 {
+    color: #C9A84D;
+    margin-bottom: 10px;
+}
+
+/* BOTÓN */
+.centrar {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.btn-boda, .btn-blog {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #000;
+    color: #C9A84D;
+    border: 2px solid #C9A84D;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn-boda:hover,
+.btn-blog:hover {
+    background: red;
+    border-color: red;
+    color: white;
+}
+
+/* CARRUSEL */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-images img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Controles del Carrusel */
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* GALERÍA DE BODAS */
+.galeria-boda {
+    padding: 20px 40px 60px;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.galeria-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #C9A84D;
+    border-radius: 8px;
+}
+
+/* VIDEO DE BODAS */
+.video-boda {
+    width: 100%;
+    height: 100%; /* Asegura que el video mantenga el mismo tamaño */
+    max-width: 300px; /* Tamaño fijo para todos los videos */
+    margin: 10px; /* Separación entre los videos */
+    border: 4px solid #C9A84D;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* GALERÍA DE VIDEOS */
+.videos-container {
+    display: flex;
+    gap: 20px; /* Espacio entre los videos */
+    justify-content: center;
+    flex-wrap: wrap; /* Se ajustan en pantallas pequeñas */
+}
+
+.video-item {
+    flex: 1 1 23%; /* Cada video ocupa el 23% del ancho del contenedor */
+    margin-bottom: 20px; /* Espacio debajo de los videos */
+}
+
+/* TÍTULO DE VIDEOS */
+h3 {
+    font-size: 36px; /* Aumenta el tamaño de la fuente */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    color: #C9A84D; /* Mantener el color dorado que ya tienes */
+    font-weight: bold; /* Hace que el título se vea más prominente */
+}
+
+/* SECCIÓN INFERIOR */
+.seccion-inferior {
+    margin-top: 50px;  /* Ajusta este valor según lo que necesites */
+    background: #000;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 5px solid #C9A84D;
+}
+
+.seccion-inferior h2 { color: #C9A84D; }
+

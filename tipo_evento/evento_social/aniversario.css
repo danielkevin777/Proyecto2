@@ -1,0 +1,235 @@
+/* ---------------------------------
+   ESTILOS GENERALES
+-----------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #111;
+}
+
+.section {
+    padding: 60px 7%;
+}
+
+.section-title {
+    font-size: 2.3rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #111;
+    font-weight: 600;
+}
+
+/* ---------------------------------
+   NAVBAR
+-----------------------------------*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 7%;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid #ececec;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #222;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #0DFE89;
+}
+
+/* ---------------------------------
+   BOTONES
+-----------------------------------*/
+.btn-primary,
+.btn-secondary,
+.btn-blog {
+    padding: 12px 26px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background: #0DFE89;
+    color: #000;
+}
+
+.btn-primary:hover {
+    background: #0bcf6d;
+}
+
+.btn-secondary {
+    background: black;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #444;
+}
+
+.btn-blog {
+    background: #0DFE89;
+    color: #000;
+    margin-top: 15px;
+}
+
+.btn-blog:hover {
+    background: #0bcf6d;
+}
+
+/* ---------------------------------
+   HERO ANIVERSARIO
+-----------------------------------*/
+.hero-aniversario {
+    height: 70vh;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.7)),
+                url('../../imagenes/FondoZ1.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.hero-aniversario h2 {
+    font-size: 3.2rem;
+    margin-bottom: 10px;
+}
+
+.hero-aniversario p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+/* ---------------------------------
+   CARDS
+-----------------------------------*/
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin: 20px 0 10px;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 1rem;
+    padding: 0 25px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* ---------------------------------
+   GALERÍA
+-----------------------------------*/
+.gallery {
+    padding-bottom: 80px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 12px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+}
+
+/* ---------------------------------
+   FOOTER
+-----------------------------------*/
+.footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 45px 7%;
+    margin-top: 60px;
+}
+
+.footer p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+/* ---------------------------------
+   RESPONSIVE
+-----------------------------------*/
+@media (max-width: 900px) {
+    .hero-aniversario h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .hero-aniversario {
+        padding: 40px 20px;
+    }
+}

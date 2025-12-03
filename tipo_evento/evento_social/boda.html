@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodas - EventLux</title>
+    <link rel="stylesheet" href="boda.css"> <!-- Archivo CSS con los estilos -->
+    <link rel="stylesheet" href="../../stilo.css"> <!-- Archivo CSS adicional -->
+</head>
+<body>
+
+    <!-- MENÚ SUPERIOR -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="../../imagenes/Logo9.png" alt="Logo de Elite Events" style="height: 40px; margin-right: 10px;">
+            Elite <span>Events</span>
+        </div>
+
+        <ul class="menu">
+            <li><a href="../../index.html">Inicio</a></li>
+            
+            <!-- SUBMENÚ ORGANIZACIÓN DE EVENTOS -->
+            <li class="submenu">
+                <a href="../../organizacion.html">Organización de Eventos ▼</a>
+                <div class="mega-menu">
+
+                    <div class="column">
+                        <h3>Eventos Sociales</h3>
+                        <a href="boda.html">Bodas</a> <!-- Ruta corregida -->
+                        <a href="quinciañero.html">Quinceaños</a> <!-- Ruta corregida -->
+                        <a href="aniversario.html">Aniversarios</a> <!-- Ruta corregida -->
+                        <a href="cumpleaños.html">Cumpleaños</a> <!-- Ruta corregida -->
+                    </div>
+                    <div class="column">
+                        <h3>Eventos Corporativos</h3>
+                        <a href="../evento_corporativo/conferencia.html">Conferencias</a>
+                        <a href="../evento_corporativo/congreso.html">Congresos</a>
+                        <a href="../evento_corporativo/lanzamiento.html">Lanzamientos</a>
+                        <a href="../evento_corporativo/feria.html">Ferias</a>
+                    </div>
+                    <div class="column">
+                        <h3>Artistas & Shows</h3>
+                        <a href="../artista/comicos.html">Cómicos</a>
+                        <a href="../artista/musicos.html">Músicos</a>
+                        <a href="../artista/presentador.html">Presentadores</a>
+                    </div>
+                    <div class="column">
+                        <h3>Servicios</h3>
+                        <a href="../servicio/catering.html">Catering</a>
+                        <a href="../servicio/decoracion.html">Decoración</a>
+                        <a href="../servicio/iluminacion.html">Iluminación</a>
+                        <a href="../servicio/espacios.html">Espacios para eventos</a>
+                    </div>
+                </div>
+            </li>
+
+            <li><a href="../../portafolio.html">Portafolio</a></li>
+            <li><a href="../../reservas.html">Reservas</a></li>
+            <li><a href="../../cotizacion.html">Cotizacion</a></li>
+            <li><a href="../../promociones.html">Promociones</a></li>
+            <li><a href="../../blog.html">Blog</a></li>
+            <li><a href="../../contacto.html">Contacto</a></li>
+        </ul>
+    </header>
+
+    <!-- BANNER SUPERIOR -->
+    <section class="banner-boda">
+        <div class="banner-texto">
+            <h1>Bodas de Ensueño</h1>
+            <p>Creamos experiencias únicas para el día más importante de tu vida.</p>
+        </div>
+    </section>
+
+    <!-- INFORMACIÓN PRINCIPAL -->
+    <section class="info-boda">
+        <h2 class="titulo-seccion">Nuestro Servicio de Bodas</h2>
+
+        <p class="descripcion">
+            En <strong>EventLux</strong>, diseñamos bodas elegantes, personalizadas y memorables.  
+            Nos encargamos de cada detalle: decoración, ceremonia, recepción, iluminación, sonido, mesa de novios y más.  
+            Nuestro equipo experto asegura que cada momento sea perfecto y mágico.
+        </p>
+
+        <div class="beneficios-grid">
+
+            <div class="beneficio-card">
+                <h3>Decoración Premium</h3>
+                <p>Arreglos florales, mesas temáticas, iluminación dorada y ambientación completa.</p>
+            </div>
+
+            <div class="beneficio-card">
+                <h3>Coordinación Total</h3>
+                <p>Coordinación de proveedores, ceremonia, recepción y manejo del evento.</p>
+            </div>
+
+            <div class="beneficio-card">
+                <h3>Paquetes Personalizados</h3>
+                <p>Adaptamos cada boda al estilo y presupuesto de la pareja.</p>
+            </div>
+
+        </div>
+
+        <div class="centrar">
+            <!-- Botón redireccionando correctamente a cotizacion.html -->
+            <a href="../../cotizacion.html" class="btn-boda">Solicitar Cotización</a>
+        </div>
+    </section>
+
+    <!-- GALERÍA DE BODAS -->
+    <section class="galeria-boda">
+        <h2 class="titulo-seccion">Galería de Bodas Realizadas</h2>
+
+        <!-- Carrusel -->
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="../../imagenes/bodasp2.jpeg" alt="Imagen 1">
+                <img src="../../imagenes/bodasp3.jpeg" alt="Imagen 2">
+                <img src="../../imagenes/bodasp4.jpeg" alt="Imagen 3">
+                <img src="../../imagenes/bodasp5.jpeg" alt="Imagen 4">
+                <img src="../../imagenes/bodasp6.jpeg" alt="Imagen 5">
+                <img src="../../imagenes/bodasp7.jpeg" alt="Imagen 6">
+            </div>
+
+            <!-- Controles -->
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+    </section>
+
+    <!-- VIDEOS DE BODAS -->
+    <section class="videos-boda">
+        <h3>Videos de nuestras Bodas</h3>      
+        <div class="videos-container">
+            <div class="video-item">
+                <video class="video-boda" controls>
+                    <source src="../../videos/videoplayback.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </div>
+            <div class="video-item">
+                <video class="video-boda" controls>
+                    <source src="../../videos/videoplayback (1).mp4" type="video/mp4">
+                    Your browser does not support the <code>video</code> tag.
+                </video>
+            </div>
+            <div class="video-item">
+                <video class="video-boda" controls>
+                    <source src="../../videos/videoplayback (2).mp4" type="video/mp4">
+                    Your browser does not support the <code>video</code> tag.
+                </video>
+            </div>
+            <div class="video-item">
+                <video class="video-boda" controls>
+                    <source src="../../videos/videoplayback (3).mp4" type="video/mp4">
+                    Your browser does not support the <code>video</code> tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN INFERIOR -->
+    <section class="seccion-inferior">
+        <h2>¿Deseas ver más ideas para tu boda?</h2>
+        <p>Explora artículos y tendencias exclusivas en nuestro blog.</p>
+        <a href="../../blog.html#final-blog" class="btn-blog">Ver Blog</a>
+    </section>
+
+    <!-- Agregar el archivo JavaScript -->
+    <script src="script.js"></script> <!-- Archivo JavaScript -->
+</body>
+</html>

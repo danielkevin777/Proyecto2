@@ -1,0 +1,232 @@
+/* ---------------------------------
+   GENERALES
+-----------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.section {
+    padding: 60px 7%;
+}
+
+.section-title {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 45px;
+    font-weight: 600;
+    color: #000;
+}
+
+/* ---------------------------------
+   NAVBAR
+-----------------------------------*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 7%;
+    background: #fff;
+    border-bottom: 3px solid red;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: red;
+}
+
+.active {
+    color: red;
+}
+
+/* SUBMENU */
+.dropdown .submenu {
+    display: none;
+    position: absolute;
+    background: #fff;
+    border: 2px solid #C9A84D;
+    border-radius: 6px;
+    padding: 10px 0;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    padding: 8px 20px;
+}
+
+.submenu li a:hover {
+    color: red;
+}
+
+/* ---------------------------------
+   BOTONES
+-----------------------------------*/
+.btn-primary,
+.btn-secondary,
+.btn-blog {
+    padding: 12px 26px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background: black;
+    color: #C9A84D;
+    border: 2px solid #C9A84D;
+}
+
+.btn-primary:hover {
+    background: red;
+    color: #fff;
+    border-color: red;
+}
+
+.btn-secondary {
+    background: black;
+    color: #C9A84D;
+    border: 2px solid #C9A84D;
+}
+
+.btn-secondary:hover {
+    background: red;
+    color: #fff;
+    border-color: red;
+}
+
+.btn-blog {
+    background: red;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.btn-blog:hover {
+    background: #C9A84D;
+    color: black;
+}
+
+/* ---------------------------------
+   HERO
+-----------------------------------*/
+.hero-cumple {
+    height: 70vh;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.7)),
+                url('../../imagenes/FondoZ1.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+.hero-cumple h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero-cumple p {
+    font-size: 1.2rem;
+    margin-bottom: 22px;
+}
+
+/* ---------------------------------
+   CARDS
+-----------------------------------*/
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+}
+
+.card {
+    background: #fff;
+    border: 3px solid #C9A84D;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin: 18px 0 10px;
+}
+
+.card p {
+    padding: 0 20px;
+    margin-bottom: 18px;
+}
+
+/* ---------------------------------
+   GALERÍA
+-----------------------------------*/
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 190px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.04);
+}
+
+/* ---------------------------------
+   FOOTER
+-----------------------------------*/
+.footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 45px 7%;
+    margin-top: 60px;
+}
+
+.footer a {
+    margin-top: 15px;
+}
+
+/* ---------------------------------
+   RESPONSIVE
+-----------------------------------*/
+@media (max-width: 900px) {
+    .hero-cumple h2 {
+        font-size: 2.4rem;
+    }
+}
